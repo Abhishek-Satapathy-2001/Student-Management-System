@@ -1,7 +1,12 @@
 package com.studentmanagementsystem.models;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Student {
     private String name;
+    @Id
     private int rollNo;
     private long regdNo;
     private String email;
@@ -12,6 +17,7 @@ public class Student {
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
